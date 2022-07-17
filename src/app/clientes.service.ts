@@ -21,7 +21,7 @@ export class ClientesService {
   }
 
  getClientes() : Observable<Cliente[]> {
-  return this.http.get<Cliente[]>('http://localhost:8080/api/clientes');
+  return this.http.get<Cliente[]>('http://localhost:8080/api/clientes/obterTodos');
  }
 
  getClienteById(id: number) : Observable<Cliente> {
